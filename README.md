@@ -1,23 +1,23 @@
 # Traffic_Simulation
 ## Threading 
 
-El threading es una tecnica que permite que una aplicacion pueda ejecutar sumultaniamente 
-varias operaciones en el mismmo espacio o mismo ambiente.
+Threading is a technique that allows an application to execute several operations 
+simultaneously in the same space or environment. 
 
-## Proyecto
+## Proyect
 
-Primeramente este proyecto se baso en una simulacion de trafico para poder probar lo que son
-los threads aplicados en un programa, con este programa pudimos observar esto de la siguiente manera:
+First of all this project was based on a traffic simulation in order to test what are the threads applied in a program. 
+With this program we were able to observe this in the following way:
 
 ![Image of simulation](traffic_simulation.png)
 
-Como podemos ver los carros tendran un spawn al inicio del mapa, y tendran una velocidad ppor defecto
-la cual podra aumentarse o disminuirse por medio de unity y los botones puestos en el programa.
+As we can see the cars will have a spawn at the beginning of the map, and they will have a default 
+speed which can be increased or decreased through unity and the buttons set in the program.
 
-Ademas cuando las luces lleguen a rojo el carro que se encuentre en ese semaforo hara un stop y luego cuando se
-ponga verde ira nuevamente hasta el final donde el objeto carro se destruira para asi poder volver a spawnear.
+Also when the lights turn red the car that is at that traffic light will make a stop and then when it 
+turns green it will go again to the end where the car object will be destroyed so it can spawn again.
 
-En lo que se refiere al threading en este proyecto, se implemento de la siguiente manera:
+Regarding the threading in this project, it was implemented in the following way:
 
 ```csharp
 IEnumerator trafficLights()
@@ -33,5 +33,5 @@ IEnumerator trafficLights()
   }
 }
 ```
-Se hizo de esta manera para controlar el flujo de los semaforos y la manera en el cual correra especificamente para
-que no hayan colisiones dentro del programa.
+It was done this way to control the flow of traffic lights and the way in which 
+it will run specifically so that there are no collisions within the program.
